@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:zhy="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_price_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_j">
+
+        <TextView
+            android:text="报价"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"
+            android:textColor="@color/black_e"
+            android:id="@+id/tv_price_z"/>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tfl_pw_price"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_price_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            zhy:max_select="1"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_b"
+        android:background="@color/color_back_ground_b"
+        android:layout_below="@id/rl_price_z"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

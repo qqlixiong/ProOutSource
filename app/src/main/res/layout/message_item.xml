@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/rl_message"
+              android:layout_height="80dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv_msg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="小李"
+        android:textSize="16sp"
+        android:textColor="@color/color_my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_msg"
+        android:layout_toRightOf="@+id/iv_msg"
+        android:layout_toEndOf="@+id/iv_msg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/tv_name"/>
+
+    <TextView
+        android:text="品牌设计"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_my_text"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"
+        android:id="@+id/tv_job"/>
+
+    <TextView
+        android:text="您大概什么时候能到"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_my_text"
+        android:layout_below="@+id/tv_job"
+        android:layout_alignLeft="@+id/tv_job"
+        android:layout_alignStart="@+id/tv_job"
+        android:id="@+id/tv_msg_content"/>
+
+    <TextView
+        android:text="11:53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_my_text"
+        android:layout_above="@+id/tv_job"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/tv_msg_time"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:my="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <com.lixiong.straight.my.view.MyView
+        android:id="@+id/mv_pro_experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:iv_my="@drawable/xianmu"/>
+</FrameLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/pro_item_bg">
+
+    <TextView
+        android:text="道具效果"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/color_status_bar"
+        android:id="@+id/tv_prop_effect"/>
+
+    <View
+        android:id="@+id/shopping_prop_line_y"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_prop_effect"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_prop_line_a"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:text="(示例)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shopping_prop_line_y"
+        android:layout_toRightOf="@+id/tv_prop_effect"
+        android:layout_toEndOf="@+id/tv_prop_effect"
+        android:textColor="@color/black_z"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:id="@+id/tv_prop_z"/>
+
+    <TextView
+        android:text="置顶显示"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_d"
+        android:textSize="14sp"
+        android:layout_below="@+id/shopping_prop_line_y"
+        android:layout_alignLeft="@+id/shopping_prop_line_y"
+        android:layout_alignStart="@+id/shopping_prop_line_y"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_prop_x"/>
+
+    <me.codeboy.android.aligntextview.AlignTextView
+        android:id="@+id/atv_prop_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_prop_x"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/black_d"/>
+</RelativeLayout>

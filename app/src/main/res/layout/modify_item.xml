@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:background="@drawable/modify_item_bg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:layout_height="44dp">
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="@color/color_status_bar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_phone_name"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_modify"/>
+
+    <View
+        android:id="@+id/modify_view"
+        android:layout_width="1dp"
+        android:layout_toRightOf="@id/iv_modify"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_message_line"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/color_text_b"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/modify_view"
+        android:layout_toEndOf="@+id/modify_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv_phone_num"/>
+
+    <EditText
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        style="@style/cursor_edit_text"
+        android:layout_toRightOf="@+id/modify_view"
+        android:layout_toEndOf="@+id/modify_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/et_text"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_code"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/btn_get_code"
+            android:background="@drawable/icon_btn_getverificationcode_n"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_get_code"
+            android:layout_alignStart="@+id/btn_get_code"
+            android:id="@+id/progressBar"/>
+    </RelativeLayout>
+
+</RelativeLayout>

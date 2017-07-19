@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/fl_login_btn"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="注册"
+        android:textColor="@color/color_status_bar"
+        android:layout_below="@id/fl_login_btn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:layout_alignLeft="@+id/fl_login_btn"
+        android:layout_alignStart="@+id/fl_login_btn"
+        android:id="@+id/tv_register"/>
+
+    <TextView
+        android:text="密码登录"
+        android:textColor="@color/color_status_bar"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:layout_alignTop="@+id/tv_register"
+        android:layout_alignRight="@+id/fl_login_btn"
+        android:layout_alignEnd="@+id/fl_login_btn"
+        android:id="@+id/tv_pwd_login"/>
+
+    <TextView
+        android:text="游客登录"
+        android:textColor="@color/color_status_bar"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:layout_below="@+id/fl_login_btn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView_tourist"/>
+</RelativeLayout>

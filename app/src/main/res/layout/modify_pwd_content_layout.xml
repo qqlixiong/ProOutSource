@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:modify="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/color_message_line"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.my.settings.view.ModifyView
+        android:id="@+id/mv_pwd_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        modify:modify_type="modify_phone"
+        modify:tv_phone_name="+86"/>
+
+    <FrameLayout
+        android:id="@+id/fl_modify_pwd_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <com.lixiong.straight.my.settings.view.ModifyView
+        android:id="@+id/mv_pwd_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        modify:iv_modify="@drawable/icon_img_changethepassword"
+        modify:modify_type="modify_edit_pwd"
+        modify:et_hint_text="新密码"/>
+
+    <FrameLayout
+        android:id="@+id/fl_modify_pwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="75dp"/>
+</LinearLayout>

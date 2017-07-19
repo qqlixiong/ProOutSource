@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_service_protocol"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lixiong.straight.login.activity.ServiceProtocolActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_ser_protocol_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="14dp"
+                android:id="@+id/iv_ser_protocol_back"/>
+        </FrameLayout>
+
+        <TextView
+            android:text="用户协议"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:id="@+id/tv_user_protocol"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_protocol_content"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_user_protocol">
+
+            <TextView
+                android:text="项目外包服务协议"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_service_protocol_text_a"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="17dp"
+                android:id="@+id/tv_straight_ser_pro"/>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:id="@+id/atv_ser_pro_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="13dp"
+                android:textColor="@color/color_service_protocol_text_a"
+                android:layout_below="@id/tv_straight_ser_pro"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"/>
+
+            <TextView
+                android:text="      一、账号注册"
+                android:id="@+id/tv_ser_protocol_a"
+                style="@style/ser_pro_text_style"
+                android:layout_below="@id/atv_ser_pro_a"/>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:id="@+id/atv_ser_pro_b"
+                android:layout_below="@id/tv_ser_protocol_a"
+                style="@style/ser_pro_text_a_style"/>
+
+            <TextView
+                android:text="      二、用户个人隐私信息保护"
+                android:id="@+id/tv_ser_protocol_b"
+                style="@style/ser_pro_text_style"
+                android:layout_below="@id/atv_ser_pro_b"/>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:id="@+id/atv_ser_pro_c"
+                android:layout_below="@id/tv_ser_protocol_b"
+                style="@style/ser_pro_text_a_style"/>
+
+            <TextView
+                android:text="      三、用户发布内容规范"
+                android:id="@+id/tv_ser_protocol_c"
+                style="@style/ser_pro_text_style"
+                android:layout_below="@id/atv_ser_pro_c"/>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:id="@+id/atv_ser_pro_d"
+                android:layout_below="@id/tv_ser_protocol_c"
+                style="@style/ser_pro_text_a_style"/>
+
+            <TextView
+                android:text="      四、使用规则"
+                android:id="@+id/tv_ser_protocol_d"
+                style="@style/ser_pro_text_style"
+                android:layout_below="@id/atv_ser_pro_d"/>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:id="@+id/atv_ser_pro_e"
+                android:layout_below="@id/tv_ser_protocol_d"
+                style="@style/ser_pro_text_a_style"/>
+
+            <TextView
+                android:text="      五、其他"
+                android:id="@+id/tv_ser_protocol_e"
+                style="@style/ser_pro_text_style"
+                android:layout_below="@id/atv_ser_pro_e"/>
+
+            <me.codeboy.android.aligntextview.AlignTextView
+                android:id="@+id/atv_ser_pro_f"
+                android:layout_below="@id/tv_ser_protocol_e"
+                style="@style/ser_pro_text_a_style"
+                android:textColor="@color/color_service_protocol_text_b"
+                android:layout_marginBottom="50dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

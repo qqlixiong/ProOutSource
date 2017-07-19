@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="60dp">
+
+    <TextView
+        android:text="账号"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:id="@+id/tv_phone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:inputType="phone"
+        android:layout_toRightOf="@id/tv_phone"
+        android:layout_marginLeft="24dp"
+        android:hint="请输入您的账号"
+        style="@style/cursor_edit_text"
+        android:id="@+id/et_phone"
+        android:layout_alignBaseline="@+id/tv_phone"
+        android:layout_alignBottom="@+id/tv_phone"/>
+
+    <View
+        android:layout_below="@id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_message_line"/>
+</RelativeLayout>

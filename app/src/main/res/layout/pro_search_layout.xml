@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_status_bar">
+
+    <RelativeLayout
+        android:id="@+id/rl_select_city"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="深圳市"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/tv_city"
+            android:layout_toRightOf="@+id/tv_city"
+            android:src="@drawable/white_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/rl_select_city"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_bg">
+
+            <TextView
+                android:id="@+id/tv_guess_a"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/iv_search"
+                android:layout_toRightOf="@+id/iv_search"
+                android:gravity="center_vertical"
+                android:text="请输入项目名或公司"
+                android:textColor="@color/black_k"
+                android:textSize="11sp"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/search"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

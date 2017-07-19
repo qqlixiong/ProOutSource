@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:top="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.view.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        top:top_bar_type="chat_page"
+        top:tv_title_name="王宽英"
+        top:tv_title_skill="品牌设计"/>
+
+    <include layout="@layout/imm_com_head_layout"/>
+
+    <FrameLayout
+        android:id="@+id/fl_imm_com"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/imm_com_bottom_layout"/>
+</LinearLayout>

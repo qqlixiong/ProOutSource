@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="E:\Android_studio2.2\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PopupWindowLibrary" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/citypicker" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/library/ColorPicker" />
+            <option value="$PROJECT_DIR$/library/Common" />
+            <option value="$PROJECT_DIR$/library/FilePicker" />
+            <option value="$PROJECT_DIR$/library/WheelPicker" />
+            <option value="$PROJECT_DIR$/okhttputils" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_transaction_detail"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lixiong.straight.my.transaction.TransactionDetailActivity">
+
+    <com.lixiong.straight.view.TopBar
+        android:id="@+id/top_transaction_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_title="@string/transaction_detail"
+        app:has_save_btn="true"/>
+
+    <com.lixiong.straight.my.view.NoDataView
+        android:id="@+id/ndv_transaction_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_transaction_detail"
+        app:tv_no_data_a="@string/no_data"/>
+</RelativeLayout>

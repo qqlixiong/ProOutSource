@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:my="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_marginBottom="@dimen/title_height"
+              android:background="@color/color_message_line"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        my:my_title="LOGO设计"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="移动APP巡检系统"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="马上用车"
+        my:my_resume_type="none"/>
+</LinearLayout>

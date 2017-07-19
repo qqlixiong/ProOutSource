@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.lixiong.straight.my.prop.fragment.MyPropFragment">
+
+    <com.lixiong.straight.my.view.NoDataView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tv_no_data_a="您还没有购买过道具, 快去"
+        app:tv_no_data_b="道具商城购买吧"/>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:background="@drawable/prop_bg"
+                android:id="@+id/rl_shopping_prop"
+                android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/iv_prop"/>
+
+    <TextView
+        android:text="服务商置顶卡"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/color_status_bar"
+        android:layout_toRightOf="@+id/iv_prop"
+        android:layout_toEndOf="@+id/iv_prop"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginStart="12.5dp"
+        android:id="@+id/tv_prop_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/color_status_bar"
+        android:layout_below="@+id/tv_prop_name"
+        android:layout_alignLeft="@+id/tv_prop_name"
+        android:layout_alignStart="@+id/tv_prop_name"
+        android:layout_marginTop="7dp"
+        android:id="@+id/tv_prop_price"/>
+
+    <TextView
+        android:text="查看全部"
+        android:background="@drawable/prop_btn_bg"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="22.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tv_prop_btn"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/prop_view"
+        android:background="@color/color_prop_line"/>
+
+    <me.codeboy.android.aligntextview.AlignTextView
+        android:id="@+id/atv_description"
+        android:layout_below="@id/prop_view"
+        android:layout_marginTop="12.5dp"
+        android:textSize="11sp"
+        android:textColor="@color/black_c"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="7.5dp"
+        android:layout_height="74.5dp"/>
+</RelativeLayout>

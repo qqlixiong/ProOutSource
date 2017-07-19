@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:my="http://schemas.android.com/apk/res-auto"
+              android:background="@color/color_message_line"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_set_reminders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        my:my_title="提醒设置"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_warning_greetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="提醒打招呼语"
+        my:has_bottom_line="false"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_modify_mobile_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        my:my_title="修改手机号"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="修改密码"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="清除缓存"
+        my:has_bottom_line="false"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_version_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        my:my_title="版本更新"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_opinion_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="意见与反馈"
+        my:my_resume_type="none"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="关于我们"
+        my:has_bottom_line="false"
+        my:my_resume_type="none"/>
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:textColor="@color/color_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"/>
+</LinearLayout>

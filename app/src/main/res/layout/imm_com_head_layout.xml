@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="#ffffff"
+              android:layout_width="match_parent"
+              android:layout_height="80dp">
+
+    <include layout="@layout/exchange_phone_layout"/>
+
+    <View
+        style="@style/imm_com_v_line_style"/>
+
+    <include layout="@layout/exchange_wx_layout"/>
+
+    <View
+        style="@style/imm_com_v_line_style"/>
+
+    <include layout="@layout/get_appendix_layout"/>
+</LinearLayout>

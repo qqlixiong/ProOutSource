@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/color_message_line"
+                android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/iv_orders_pro_experience"/>
+
+    <TextView
+        android:text="您还没有项目经验,快去填写项目经验"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/iv_orders_pro_experience"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_fill_pro_experience"/>
+
+    <TextView
+        android:text="提升自己的曝光度!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/tv_fill_pro_experience"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_boost_exposure"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_btn_add_experience"
+        android:layout_below="@+id/tv_boost_exposure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/iv_add_pro_experience"/>
+</RelativeLayout>

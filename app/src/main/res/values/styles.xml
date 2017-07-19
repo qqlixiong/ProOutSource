@@ -1,0 +1,153 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="bottom_tag_style">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:gravity">center</item>
+
+
+        <item name="android:textColor">@drawable/bottom_text_color_drawable_selector</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="service_category_left_style">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/bottom_text_color_drawable_selector</item>
+    </style>
+
+    <style name="my_layout_v_line_style">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_message_line</item>
+    </style>
+
+    <style name="category_v_line_style">
+        <item name="android:background">@color/color_category_line</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="imm_com_v_line_style" parent="my_layout_v_line_style">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="h_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_h_line</item>
+    </style>
+
+    <style name="DialogTheme.CenterCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="cursor_edit_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:textColor">@color/color_my_text</item>
+    </style>
+
+    <style name="cursor_edit_text" parent="cursor_edit_text_style">
+        <item name="android:textColorHint">@color/color_edit_hint</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tv_pro_cate_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/color_cate_shade_text</item>
+        <item name="android:background">@drawable/pro_item_cate_bg</item>
+    </style>
+
+    <style name="dialog_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/dialog_text_color</item>
+    </style>
+
+    <style name="project_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/color_pro_shade_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ser_cate_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_text_a</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ser_cate_select_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="ser_cate_select_a_style" parent="ser_cate_select_style">
+        <item name="android:textColor">@color/color_status_bar</item>
+        <item name="android:background">@drawable/ser_cate_select_bg</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ser_pro_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_service_protocol_text_a</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">13dp</item>
+    </style>
+
+    <style name="ser_pro_text_a_style">
+        <item name="android:textColor">@color/color_service_protocol_text_a</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">13dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+</resources>

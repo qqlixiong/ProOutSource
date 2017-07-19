@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_project"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/pro_item_bg">
+
+    <TextView
+        android:text="游戏广告"
+        android:id="@+id/tv_pro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_pro_text"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_pro_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/location"/>
+
+    <TextView
+        android:text="郑州市"
+        android:id="@+id/tv_pro_city"
+        android:layout_below="@+id/tv_pro_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        style="@style/project_text_style"
+        android:layout_toEndOf="@+id/iv_location"
+        android:layout_toRightOf="@+id/iv_location"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_pro_period"
+        style="@style/project_text_style"
+        android:layout_below="@+id/tv_pro_title"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/tv_pro_city"
+        android:layout_toRightOf="@+id/tv_pro_city"
+        android:gravity="center"
+        android:text="项目周期:"/>
+
+    <TextView
+        android:text="2周"
+        android:id="@+id/tv_time"
+        style="@style/project_text_style"
+        android:layout_below="@+id/tv_pro_title"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/tv_pro_period"
+        android:layout_toRightOf="@+id/tv_pro_period"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="100-600"
+        android:id="@+id/tv_pro_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_pro_title"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="#ff0000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:text="销售行业"
+        android:id="@+id/tv_ser_cate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/color_pro_text"
+        android:layout_alignLeft="@+id/iv_location"
+        android:layout_alignStart="@+id/iv_location"
+        android:layout_below="@+id/tv_pro_city"
+        android:gravity="center"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:text="手游"
+        android:id="@+id/tv_pro_cate_a"
+        style="@style/tv_pro_cate_style"
+        android:layout_below="@+id/tv_pro_period"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/tv_ser_cate"
+        android:layout_toRightOf="@+id/tv_ser_cate"/>
+
+    <TextView
+        android:text="3D游戏"
+        android:id="@+id/tv_pro_cate_b"
+        style="@style/tv_pro_cate_style"
+        android:layout_alignBottom="@id/tv_pro_cate_a"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_pro_cate_a"/>
+
+    <TextView
+        android:text="网页游戏"
+        android:id="@+id/tv_pro_cate_c"
+        style="@style/tv_pro_cate_style"
+        android:layout_alignBottom="@+id/tv_pro_cate_b"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/tv_pro_cate_b"
+        android:layout_toRightOf="@+id/tv_pro_cate_b"/>
+
+    <View
+        android:id="@+id/pro_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_pro_cate_a"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_message_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/pro_list_view">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_pro_person"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/my_a"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:text="汪海鹏"
+            android:id="@+id/tv_pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_pro_person"
+            android:textColor="@color/color_my_text"
+            android:textSize="12sp"/>
+
+        <View
+            android:id="@+id/pro_v_line"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_pro_name"
+            android:background="@color/color_message_line"/>
+
+        <ImageView
+            android:id="@+id/iv_person_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_pro_person"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/personal"
+            android:layout_toRightOf="@id/pro_v_line"
+            android:textColor="@color/color_my_text"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <com.lixiong.straight.view.CornerFlagView
+        android:visibility="gone"
+        android:id="@+id/cornerFlagView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:cfv_backgroundColor="#f1c30d"
+        app:cfv_fullCorner="false"
+        app:cfv_orientation="right"
+        app:cfv_textColor="#fff"
+        app:cfv_textContent="推荐"
+        app:cfv_textSize="12sp"/>
+</RelativeLayout>

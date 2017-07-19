@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:modify="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <include layout="@layout/code_a_layout"/>
+
+    <com.lixiong.straight.my.settings.view.ModifyView
+        android:id="@+id/modify_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        modify:modify_type="modify_code_pwd"
+        modify:et_hint_text="验证码"/>
+</RelativeLayout>

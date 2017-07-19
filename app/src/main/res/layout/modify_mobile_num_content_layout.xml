@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:modify="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/back_ground_color"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.my.settings.view.ModifyView
+        android:id="@+id/modify_view_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        modify:modify_type="modify_phone"
+        modify:tv_phone_name="+86"/>
+
+    <com.lixiong.straight.my.settings.view.ModifyView
+        android:visibility="gone"
+        android:id="@+id/modify_view_edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        modify:modify_type="modify_edit_phone"
+        modify:et_hint_text="请输入您的新手机号码"
+        modify:tv_phone_name="+86"/>
+
+    <FrameLayout
+        android:id="@+id/fl_modify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/fl_modify_phone_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:text="修改手机号后, 可以使用新手机号登录小牛项目直包"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/color_text_c"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:text="聊天时“交换电话”功能的手机号会一同修改"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textColor="@color/color_text_c"
+        android:textSize="11sp"/>
+</LinearLayout>

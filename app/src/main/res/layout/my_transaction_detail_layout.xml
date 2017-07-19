@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:my="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <com.lixiong.straight.my.view.MyView
+        android:id="@+id/mv_transaction_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:tv_my_name="@string/transaction_detail"
+        my:iv_my="@drawable/qianbao"
+        my:has_my_line="false"/>
+</FrameLayout>

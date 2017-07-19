@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_modify_pwd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:top="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lixiong.straight.my.settings.activity.ModifyPwdActivity">
+
+    <com.lixiong.straight.view.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        top:tv_title="修改密码"/>
+
+    <include layout="@layout/modify_pwd_content_layout"/>
+</LinearLayout>

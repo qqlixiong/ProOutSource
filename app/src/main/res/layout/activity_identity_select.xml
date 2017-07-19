@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_identity_select"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lixiong.straight.login.activity.IdentitySelectActivity">
+
+    <include layout="@layout/register_head_layout"/>
+
+    <include layout="@layout/register_looking_service_layout"/>
+
+    <include layout="@layout/register_looking_project_layout"/>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pro_item_bg"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:text="任务内容:"
+        android:textSize="16sp"
+        android:textColor="@color/color_status_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_task_content"/>
+
+    <TextView
+        android:text="招标城市:"
+        android:textColor="@color/color_my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_task_content"
+        android:layout_alignLeft="@+id/tv_task_content"
+        android:layout_alignStart="@+id/tv_task_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_invite_city_a"/>
+
+    <TextView
+        android:textColor="@color/color_my_text"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_invite_city_a"
+        android:layout_toRightOf="@+id/tv_invite_city_a"
+        android:layout_toEndOf="@+id/tv_invite_city_a"
+        android:id="@+id/tv_invite_city"/>
+
+    <TextView
+        android:textColor="@color/color_my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_invite_city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:id="@+id/tv_invite_person_num"/>
+
+    <TextView
+        android:text="所需人数:"
+        android:textColor="@color/color_my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_alignTop="@+id/tv_invite_city"
+        android:layout_toLeftOf="@+id/tv_invite_person_num"
+        android:layout_toStartOf="@+id/tv_invite_person_num"
+        android:id="@+id/tv_invite_person_num_a"/>
+
+    <TextView
+        android:text="项目周期:"
+        android:textColor="@color/color_my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_invite_city_a"
+        android:layout_alignLeft="@+id/tv_invite_city_a"
+        android:layout_alignStart="@+id/tv_invite_city_a"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/tv_pro_period_a"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_my_text"
+        android:layout_alignTop="@+id/tv_pro_period_a"
+        android:layout_toRightOf="@+id/tv_task_content"
+        android:layout_toEndOf="@+id/tv_task_content"
+        android:id="@+id/tv_pro_period"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_my_text"
+        android:layout_alignTop="@+id/tv_pro_period"
+        android:layout_toRightOf="@+id/tv_invite_person_num_a"
+        android:layout_toEndOf="@+id/tv_invite_person_num_a"
+        android:id="@+id/tv_price_range"/>
+
+    <TextView
+        android:text="报价范围:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_my_text"
+        android:layout_alignTop="@+id/tv_price_range"
+        android:layout_alignLeft="@+id/tv_invite_person_num_a"
+        android:layout_alignStart="@+id/tv_invite_person_num_a"
+        android:id="@+id/tv_price_range_a"/>
+</RelativeLayout>

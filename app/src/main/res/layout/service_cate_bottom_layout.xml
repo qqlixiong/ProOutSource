@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="102dp">
+
+    <View
+        android:id="@+id/service_cate_top_h_line"
+        style="@style/h_line_style"/>
+
+    <TextView
+        android:id="@+id/tv_service_cate_selected"
+        style="@style/ser_cate_text_style"
+        android:layout_below="@+id/service_cate_top_h_line"
+        android:layout_marginLeft="10dp"
+        android:text="已选择"/>
+
+    <TextView
+        android:id="@+id/tv_ser_cate_selected_num"
+        style="@style/ser_cate_text_style"
+        android:layout_below="@+id/service_cate_top_h_line"
+        android:layout_toEndOf="@+id/tv_service_cate_selected"
+        android:layout_toRightOf="@+id/tv_service_cate_selected"
+        android:text="0"
+        android:textColor="@color/color_status_bar"/>
+
+    <TextView
+        android:id="@+id/tv_ser_cate_can_select"
+        style="@style/ser_cate_text_style"
+        android:layout_below="@+id/service_cate_top_h_line"
+        android:layout_toEndOf="@+id/tv_ser_cate_selected_num"
+        android:layout_toRightOf="@+id/tv_ser_cate_selected_num"
+        android:text="个,   还可以选择"/>
+
+    <TextView
+        android:id="@+id/tv_ser_cate_can_select_num"
+        style="@style/ser_cate_text_style"
+        android:layout_below="@+id/service_cate_top_h_line"
+        android:layout_toEndOf="@+id/tv_ser_cate_can_select"
+        android:layout_toRightOf="@+id/tv_ser_cate_can_select"
+        android:text="3"
+        android:textColor="@color/color_status_bar"/>
+
+    <TextView
+        android:id="@+id/tv_ser_cate_number"
+        style="@style/ser_cate_text_style"
+        android:layout_below="@+id/service_cate_top_h_line"
+        android:layout_toEndOf="@+id/tv_ser_cate_can_select_num"
+        android:layout_toRightOf="@+id/tv_ser_cate_can_select_num"
+        android:text="个"/>
+
+    <com.lixiong.straight.view.RoundTextView
+        android:id="@+id/rtv_confirm"
+        android:layout_width="55dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/service_cate_top_h_line"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        app:rtvBackground="@color/color_status_bar"
+        app:rtvCornerSize="4"
+        app:rtvIsCircle="false"
+        app:rtvText="确定"
+        app:rtvTextColor="@android:color/white"
+        app:rtvTextSize="14sp"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/service_cate_select_bottom_h_line"
+        android:layout_below="@id/tv_service_cate_selected"
+        style="@style/h_line_style"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/service_cate_select_bottom_h_line">
+
+        <TextView
+            style="@style/ser_cate_select_a_style"
+            android:id="@+id/tv_select_num_a"/>
+
+        <TextView
+            style="@style/ser_cate_select_a_style"
+            android:layout_toRightOf="@id/tv_select_num_a"
+            android:id="@+id/tv_select_num_b"/>
+
+        <TextView
+            style="@style/ser_cate_select_a_style"
+            android:layout_toRightOf="@id/tv_select_num_b"
+            android:id="@+id/tv_select_num_c"/>
+    </RelativeLayout>
+</RelativeLayout>

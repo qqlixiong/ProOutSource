@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:my="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:background="#ffffff"
+              android:layout_width="match_parent"
+              android:layout_height="80dp">
+
+    <com.lixiong.straight.my.view.MyHeadView
+        android:id="@+id/mhv_my_prop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        my:iv_my_function_picture="@drawable/prop"
+        my:tv_my_function_name="我的道具"/>
+
+    <View
+        style="@style/my_layout_v_line_style"/>
+
+    <com.lixiong.straight.my.view.MyHeadView
+        android:id="@+id/mhv_shopping_prop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        my:iv_my_function_picture="@drawable/shopping"
+        my:tv_my_function_name="道具商城"/>
+
+    <View
+        style="@style/my_layout_v_line_style"/>
+
+    <com.lixiong.straight.my.view.MyHeadView
+        android:id="@+id/mhv_my_collect"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        my:iv_my_function_picture="@drawable/collect"
+        my:tv_my_function_name="我的收藏"/>
+
+    <View
+        style="@style/my_layout_v_line_style"/>
+
+    <com.lixiong.straight.my.view.MyHeadView
+        android:id="@+id/mhv_my_follow"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        my:iv_my_function_picture="@drawable/company"
+        my:tv_my_function_name="我的关注"/>
+
+    <View
+        style="@style/my_layout_v_line_style"/>
+
+    <com.lixiong.straight.my.view.MyHeadView
+        android:id="@+id/mhv_enterprise_certification"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        my:iv_my_function_picture="@drawable/enterprise_certification"
+        my:tv_my_function_name="身份认证"/>
+</LinearLayout>

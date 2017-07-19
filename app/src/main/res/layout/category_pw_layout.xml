@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:zhy="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_pw_category"
+        android:layout_width="140dp"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/rg_pw_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_j"
+        android:layout_toRightOf="@id/nsv_pw_category">
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tfl_pw_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            zhy:max_select="1"/>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

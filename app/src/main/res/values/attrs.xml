@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomMyView">
+        <attr name="my_title" format="string"/>
+        <attr name="my_src" format="reference"/>
+        <attr name="my_resume_type" format="enum">
+            <enum name="image_view" value="0"/>
+            <enum name="text_view" value="1"/>
+            <enum name="edit_text" value="2"/>
+            <enum name="none" value="3"/>
+            <enum name="switch_view" value="4"/>
+            <enum name="right_pic" value="5"/>
+        </attr>
+        <attr name="my_et_hint_text" format="string"/>
+        <attr name="my_tv_text" format="string"/>
+        <attr name="has_bottom_line" format="boolean"/>
+        <attr name="has_iv_go" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TopBar">
+        <attr name="top_bar_type" format="enum">
+            <enum name="general_page" value="0"/>
+            <enum name="chat_page" value="1"/>
+            <enum name="pro_detail_page" value="2"/>
+            <enum name="tv_save" value="3"/>
+        </attr>
+        <attr name="tv_title" format="string"/>
+        <attr name="tv_title_name" format="string"/>
+        <attr name="tv_title_skill" format="string"/>
+        <attr name="has_top_back" format="boolean"/>
+        <attr name="has_save_btn" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ModifyView">
+        <attr name="tv_phone_name" format="string"/>
+        <attr name="modify_type" format="enum">
+            <enum name="modify_phone" value="0"/>
+            <enum name="modify_code_pwd" value="1"/>
+            <enum name="modify_edit_phone" value="2"/>
+            <enum name="modify_edit_pwd" value="3"/>
+        </attr>
+        <attr name="et_hint_text" format="string"/>
+        <attr name="iv_modify" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyView">
+        <attr name="iv_my" format="reference"/>
+        <attr name="tv_my_name" format="string"/>
+        <attr name="has_my_line" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CategoryMenuView">
+        <attr name="tv_category" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundTextView">
+        <attr name="rtvText" format="string" />          // 文本内容
+        <attr name="rtvBackground" format="color"/>      // 背景颜色
+        <attr name="rtvTextSize" format="dimension"/>    // 文本字体大小
+        <attr name="rtvTextColor" format="color"/>       // 文本颜色
+        <attr name="rtvCornerSize" format="float"/>      // 圆角大小
+        <attr name="rtvBorderWidth" format="float"/>     // 边框大小
+        <attr name="rtvBorderColor" format="color"/>     // 边框颜色
+        <attr name="rtvIsWithBorder" format="boolean"/>  // 是否带边框
+        <attr name="rtvIsCircle" format="boolean"/>      // 是否是圆角
+    </declare-styleable>
+
+    <declare-styleable name="ButtonView">
+        <attr name="btn_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CornerFlagView">
+        <!--文本大小-->
+        <attr name="cfv_textSize" format="dimension"/>
+        <!--文本内容-->
+        <attr name="cfv_textContent" format="string"/>
+        <!--文本颜色-->
+        <attr name="cfv_textColor" format="color"/>
+        <!--背景颜色-->
+        <attr name="cfv_backgroundColor" format="color"/>
+        <!--阴影是否占满上角-->
+        <attr name="cfv_fullCorner" format="boolean"/>
+        <!--倾斜放向-->
+        <attr name="cfv_orientation" format="enum">
+            <!--右角标，向左侧倾斜-->
+            <enum name="right" value="0"/>
+            <!--左角标，向右侧倾斜-->
+            <enum name="left" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyHeadView">
+        <attr name="tv_my_function_name" format="string"/>
+        <attr name="iv_my_function_picture" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NoDataView">
+        <attr name="tv_no_data_a" format="string"/>
+        <attr name="tv_no_data_b" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="100dp"
+                android:background="@color/color_status_bar"
+                android:layout_height="60dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_btn_more_white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/iv_per_go"/>
+
+    <TextView
+        android:text="个人信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        android:layout_toLeftOf="@+id/iv_per_go"
+        android:layout_toStartOf="@+id/iv_per_go"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/tv_per_msg"/>
+
+    <TextView
+        android:text="完善度 0%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_alignRight="@+id/tv_per_msg"
+        android:layout_alignEnd="@+id/tv_per_msg"
+        android:id="@+id/tv_perfect"/>
+</RelativeLayout>

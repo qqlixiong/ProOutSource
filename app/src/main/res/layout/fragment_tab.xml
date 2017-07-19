@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--是否可以滚动,默认fixed：app:tabMode="scrollable/fixed"-->
+    <!--指示器高度：app:tabIndicatorHeight="4dp"-->
+    <!--底部的横杆指示器的颜色：app:tabIndicatorColor="#3381f5"-->
+    <!--tab被选中的字体颜色：app:tabSelectedTextColor="#f00"-->
+    <!--tab默认的字体颜色：app:tabTextColor="#c4bfbf"-->
+    <!--tab字体的样式：app:tabTextAppearance="@style/MyCustomTabTextAppearance"-->
+    <!--tablayout的背景色：app:tabBackground="@color/greenLight" 和android:backgroud是一样的效果-->
+    <!--下面都是tab的padding设置：-->
+    <!--app:tabPadding="5dp"-->
+    <!--app:tabPaddingBottom="5dp"-->
+    <!--app:tabPaddingEnd="5dp"-->
+    <!--app:tabPaddingStart="5dp"-->
+    <!--app:tabPaddingTop="5dp"-->
+    <!--TabLayout布局的位置：app:tabGravity="center/fill" center：整体居中显示；fill：占满父布局，当然还和layout_width相关-->
+    <!--tablayout距离start的距离：app:tabContentStart="100dp"-->
+    <!--tab的最大宽度：app:tabMaxWidth="100dp"-->
+    <!--tab的最小宽度：app:tabMinWidth="50dp"-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/color_status_bar"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/black_b" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

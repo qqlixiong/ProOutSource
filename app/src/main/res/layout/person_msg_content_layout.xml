@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:my="http://schemas.android.com/apk/res-auto"
+              android:background="@color/color_message_line"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="头像"
+        my:my_resume_type="image_view"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="姓名"
+        my:my_resume_type="edit_text"
+        my:has_bottom_line="false"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        my:my_title="手机号"
+        my:my_resume_type="edit_text"
+        my:my_et_hint_text="手机号"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_we_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="微信号"
+        my:my_resume_type="edit_text"
+        my:my_et_hint_text="微信号"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="邮箱"
+        my:my_resume_type="edit_text"
+        my:my_et_hint_text="邮箱"
+        my:has_bottom_line="false"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        my:my_title="所在地"
+        my:my_resume_type="text_view"
+        my:my_tv_text="请选择"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_service_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="服务类目"
+        my:my_resume_type="text_view"
+        my:my_tv_text="请选择"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_individual_resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="个人简介"
+        my:my_resume_type="right_pic"
+        my:has_bottom_line="false"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_hot"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <TextView
+            android:text="最热"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_status_bar"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_hot_a"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/n"
+            android:layout_alignTop="@+id/tv_hot_a"
+            android:layout_toRightOf="@+id/tv_hot_a"
+            android:layout_toEndOf="@+id/tv_hot_a"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/iv_hot_a"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_new"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:layout_below="@id/rl_hot">
+
+        <TextView
+            android:text="最新"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_e"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_new_a"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/n"
+            android:visibility="gone"
+            android:layout_alignTop="@+id/tv_new_a"
+            android:layout_toRightOf="@+id/tv_new_a"
+            android:layout_toEndOf="@+id/tv_new_a"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/iv_new_a"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_a"
+        android:background="@color/color_back_ground_b"
+        android:layout_below="@id/rl_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

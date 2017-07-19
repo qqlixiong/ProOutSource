@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:my="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/color_message_line"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_call_language"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="打招呼语"
+        my:my_resume_type="switch_view"
+        my:has_iv_go="false"
+        my:has_bottom_line="false"/>
+
+    <TextView
+        android:id="@+id/tv_select_call_language"
+        android:text="选择打招呼语"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <include layout="@layout/call_language_layout"/>
+</LinearLayout>

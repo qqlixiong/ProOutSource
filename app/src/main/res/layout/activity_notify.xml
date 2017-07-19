@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_notify"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lixiong.straight.my.notify.NotifyActivity">
+
+    <com.lixiong.straight.view.TopBar
+        android:id="@+id/top_notify"
+        app:tv_title="@string/notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.lixiong.straight.my.view.NoDataView
+        android:id="@+id/ndv_notify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_notify"
+        app:tv_no_data_a="@string/no_data"/>
+</RelativeLayout>

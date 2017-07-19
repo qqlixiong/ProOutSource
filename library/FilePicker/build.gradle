@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+ext {
+    isLibrary = true
+    pomArtifactId = "FilePicker"
+    pomDescription = "file picker for android"
+}
+
+dependencies {
+    compile project(":library:Common")
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+}

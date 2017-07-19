@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:issue="http://schemas.android.com/apk/res-auto"
+              android:background="@color/color_message_line"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="请完善您的个人资料"
+            issue:my_title="个人信息"
+            issue:has_bottom_line="false"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="您的项目名称"
+            issue:my_title="项目名"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="请选择"
+            issue:my_title="需求类目"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="请选择"
+            issue:my_title="报价范围"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="请选择"
+            issue:my_title="项目周期"
+            issue:has_bottom_line="false"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="请选择"
+            issue:my_title="所需人数"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="请选择"
+            issue:my_title="所在地"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="简单描述您的需求"
+            issue:my_title="项目描述"
+            issue:has_bottom_line="false"/>
+
+        <com.lixiong.straight.my.view.CustomMyView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:my_tv_text="请选择"
+            issue:my_title="项目附件"/>
+
+        <com.lixiong.straight.view.ButtonView
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            issue:btn_text="@string/issue_project"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

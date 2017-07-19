@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_identification_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="认证有啥好处?"
+            android:layout_width="120dp"
+            android:layout_height="28.5dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/color_status_bar"
+            android:background="@drawable/identification_bg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_identification_good"/>
+    </RelativeLayout>
+
+    <TextView
+        android:text="身份认证"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_d"
+        android:textSize="13sp"
+        android:layout_below="@+id/rl_identification_good"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tv_identification_type"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        android:layout_below="@+id/tv_identification_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/iv_identification"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_limited_time_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_identification"
+        android:layout_marginTop="57dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_limited_time_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/color_status_bar"
+            android:text="限时优惠:"/>
+
+        <TextView
+            android:id="@+id/tv_limited_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/color_status_bar"
+            android:layout_toRightOf="@id/tv_limited_time_discount"
+            android:text="￥1.5"/>
+    </RelativeLayout>
+
+    <TextView
+        android:text="为什么要缴纳认证费?"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/rl_limited_time_discount"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_identification_payment_cause"/>
+
+    <TextView
+        android:text="立即认证"
+        android:layout_width="280dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn_bg"
+        android:layout_below="@+id/tv_identification_payment_cause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_immediate_communication"/>
+</RelativeLayout>

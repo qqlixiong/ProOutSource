@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:my="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_waining_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        my:max_select="1"/>
+</android.support.v4.widget.NestedScrollView>

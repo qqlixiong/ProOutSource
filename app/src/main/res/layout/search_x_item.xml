@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ser_cate_normal_bg"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/black_o"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_search_x"/>
+</RelativeLayout>

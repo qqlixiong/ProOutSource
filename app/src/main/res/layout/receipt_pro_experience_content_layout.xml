@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:top="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/re_pro_ex_con_layout"/>
+
+    <TextView
+        android:text="发布新项目"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:background="@color/color_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"/>
+</RelativeLayout>

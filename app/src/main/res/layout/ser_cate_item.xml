@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView style="@style/ser_cate_select_style"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/ser_cate_backgound_selector"
+          android:textColor="@drawable/ser_cate_text_color_drawable_selector"/>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:text="请注意拍摄身份证的正面"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_e"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_imm_comm_a"/>
+
+    <TextView
+        android:id="@+id/tv_imm_comm_b"
+        android:text="你难得信息仅用于认证, 不对他人公开"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_f"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/button_imm_comm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="提交审核"
+        android:background="@color/black_g"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:enabled="false"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@id/tv_imm_comm_b"/>
+
+    <RelativeLayout
+        android:layout_below="@id/tv_imm_comm_a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_imm_comm"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imm_comm_z_select_bg">
+
+        <ImageView
+            android:id="@+id/iv_imm_comm_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/prop_bg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/photo_a"/>
+
+        <Button
+            android:text="上传照片"
+            android:background="@drawable/login_btn_bg"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/button_upload_picture"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

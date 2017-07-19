@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:category="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="40dp">
+
+    <com.lixiong.straight.project.CategoryMenuView
+        android:layout_weight="1"
+        android:id="@+id/cmv_the_hottest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        category:tv_category="@string/the_hottest"/>
+
+    <View
+        style="@style/category_v_line_style"/>
+
+    <com.lixiong.straight.project.CategoryMenuView
+        android:id="@+id/cmv_category"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        category:tv_category="@string/category"/>
+
+    <View
+        style="@style/category_v_line_style"/>
+
+    <com.lixiong.straight.project.CategoryMenuView
+        android:id="@+id/cmv_quoted_price"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        category:tv_category="@string/quoted_price"/>
+</LinearLayout>

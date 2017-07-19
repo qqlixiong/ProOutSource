@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:my="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/color_message_line"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/color_my_text"
+        android:text="声音与震动"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sound_vibration"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="声音"
+        my:has_iv_go="false"
+        my:my_resume_type="switch_view"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        my:my_title="震动"
+        my:my_resume_type="switch_view"
+        my:has_iv_go="false"
+        my:has_bottom_line="false"/>
+</LinearLayout>

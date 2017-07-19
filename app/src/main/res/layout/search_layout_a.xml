@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+    android:background="@color/color_status_bar">
+
+    <TextView
+        android:text="@string/cancel"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/search_a_cancel"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:id="@+id/search_a"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/search_a_cancel"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:background="@drawable/search_bg_a"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp">
+
+            <EditText
+                android:hint="请输入项目名或公司"
+                android:textSize="11sp"
+                android:gravity="center_vertical"
+                style="@style/cursor_edit_text_style"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/et_search_a"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_search"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"
+                android:id="@+id/iv_search"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/search_a_cancel"
+        android:layout_toStartOf="@+id/search_a_cancel"
+        android:gravity="center"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:srcCompat="@drawable/close"
+            android:id="@+id/iv_delete"/>
+    </RelativeLayout>
+</RelativeLayout>

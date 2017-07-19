@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_pro_exp_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:my_resume_type="text_view"
+        app:my_tv_text="请完善您的个人信息"
+        app:my_title="个人信息"
+        app:has_bottom_line="false"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_pro_exp_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:my_title="项目名"
+        app:my_resume_type="edit_text"
+        app:my_tv_text="您的项目名称"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_pro_exp_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:my_title="项目描述"
+        app:my_resume_type="text_view"
+        app:my_tv_text="简单描述您的项目"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_pro_exp_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:my_title="项目业绩"
+        app:my_resume_type="text_view"
+        app:my_tv_text="选填"/>
+
+    <com.lixiong.straight.my.view.CustomMyView
+        android:id="@+id/cmv_pro_exp_e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:my_title="时间段"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/save"
+        android:id="@+id/tv_add_pro_exp_save"
+        android:gravity="center"
+        android:background="@drawable/login_btn_bg"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:button="http://schemas.android.com/apk/res-auto"
+                android:background="@color/color_message_line"
+                android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/iv_orders_pro_experience"/>
+
+    <TextView
+        android:text="您还没有发布任何项目"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/iv_orders_pro_experience"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_fill_pro_experience"/>
+
+    <TextView
+        android:text="快去发布项目吧!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/tv_fill_pro_experience"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_boost_exposure"/>
+
+    <com.lixiong.straight.view.ButtonView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        button:btn_text="@string/issue_project"
+        android:layout_below="@+id/tv_boost_exposure"
+        android:layout_marginTop="80dp"
+        android:id="@+id/iv_issue_project"/>
+</RelativeLayout>

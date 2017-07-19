@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:switch="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_height="49dp">
+
+    <TextView
+        android:text="头像"
+        android:textSize="14sp"
+        android:textColor="@color/color_my_text"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv_my_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jinr"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/iv_my_go"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/photo"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_my_go"
+        android:layout_toStartOf="@+id/iv_my_go"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/iv_my_pic"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_my_go"
+        android:layout_toStartOf="@+id/iv_my_go"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/iv_my"/>
+
+    <TextView
+        android:textColor="@color/color_my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_my_go"
+        android:layout_toStartOf="@+id/iv_my_go"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/tv_my_resume"/>
+
+    <EditText
+        android:visibility="gone"
+        style="@style/cursor_edit_text"
+        android:inputType="textPersonName"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="14dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_my_go"
+        android:layout_toStartOf="@+id/iv_my_go"
+        android:id="@+id/et_my_resume"/>
+
+    <com.lixiong.straight.my.view.SwitchView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        switch:isOpened="true"
+        switch:primaryColor="@color/color_status_bar"
+        switch:primaryColorDark="@color/color_status_bar"
+        android:id="@+id/custom_switch_view"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <View
+        android:id="@+id/my_bottom_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/color_message_line"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_pic_select_sculpture"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="拍照"
+            style="@style/dialog_text_style"
+            android:id="@+id/tv_take_picture"/>
+
+        <View
+            android:id="@+id/head_sculpture_dialog_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_message_line"
+            android:layout_below="@id/tv_take_picture"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:text="从手机相册选择"
+            style="@style/dialog_text_style"
+            android:id="@+id/tv_select_from_phone_album"
+            android:layout_below="@id/head_sculpture_dialog_line"/>
+    </RelativeLayout>
+
+    <TextView
+        android:text="取消"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        style="@style/dialog_text_style"
+        android:id="@+id/tv_cancel"
+        android:layout_below="@id/rl_pic_select_sculpture"/>
+</RelativeLayout>

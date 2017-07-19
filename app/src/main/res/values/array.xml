@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--报价-->
+    <string-array name="arrayPrice">
+        <item>全部</item>
+        <item>1K以下</item>
+        <item>1K-5K</item>
+        <item>5K-10K</item>
+        <item>10K-20K</item>
+        <item>20K-50K</item>
+        <item>50-100K</item>
+        <item>100K以上</item>
+    </string-array>
+</resources>
