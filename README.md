@@ -42,7 +42,7 @@
  发现它返回类型不是void,而是boolean</br>
  解决方案：</br>
    ### 1.定义一个全局变量用来标记 </br>
-         private boolean isConnected = false;  </br>
+         private boolean isConnected = false;  
 ###    2.在bindService时 </br>
         isConnected = bindService（intent）;</br>
   ###  3.onDestroy()</br>
