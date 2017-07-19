@@ -31,3 +31,25 @@
 ------------------------------------------------------------------------------------
 ##    数据解析
 采用fastjson</br>
+--------------------------------------------------------------------------------------
+## 指引页
+可以点击立即体验进入主页面，也可以滑动进入主页面
+--------------------------------------------------------------------------------------------------
+##  BUG处理
+在5.0的手机上覆写onDestory()方法时调用unbindService(conn)并没有出现这个问题，</br>
+ 但是在4.4的机子上跑的时候，退出发现就报上述错误了。可能有人会想，明明有使用bindService绑定服务呀，</br>
+而且查看进程服务也在运行。没错，我一开始就是这么认为的，然后我点进bindService这个方法去看源码，</br>
+ 发现它返回类型不是void,而是boolean</br>
+ 解决方案：</br>
+   ### 1.定义一个全局变量用来标记 </br>
+         private boolean isConnected = false;</br>
+  ###  2.在bindService时 </br>
+        isConnected = bindService（intent）;</br>
+  ###  3.onDestroy()</br>
+        //预先判断ServiceConnection 是否为空，不空再解绑服务。
+        if(isConnected){
+            unbindService(conn);//conn表示ServiceConnection 对象
+            isConnected = false;
+        }
+        super.onDestroy();
+
