@@ -1,5 +1,5 @@
 # ProOutSource
-一个高仿BOSS直聘,项目发单和接单的APP。
+自己设计开发的一套APP，数据由自己在本地加载。
 使用了okhttoUtils框架，基于位置的定位服务，集成Mob短信验证码服务，大量自定义组件,viewHolder编程，代码混淆处理等等。
 ##   viewHolder编程的运用
 ###  1.使代码更清晰明了。</br>
