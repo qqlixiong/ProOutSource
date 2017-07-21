@@ -3,8 +3,8 @@ package com.lixiong.straight.base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
 
 import com.gyf.barlibrary.ImmersionBar;
@@ -13,15 +13,17 @@ import com.lixiong.straight.common.utils.AppManger;
 import com.lixiong.straight.interfaces.ICheckedChanged;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import butterknife.ButterKnife;
 
 /**
+ * 主页的基类
  * Created by john on 2017/4/16.
  */
 
-public abstract class BaseFragmentMainActivity extends FragmentActivity {
+public abstract class BaseFragmentMainActivity extends AppCompatActivity {
 
     protected List<BaseFragment> mBaseFragment;
     /**
@@ -61,10 +63,11 @@ public abstract class BaseFragmentMainActivity extends FragmentActivity {
     protected abstract void initView();
 
     protected void initFragment(){
-        mBaseFragment = new ArrayList<>();
-        for(BaseFragment baseFragment : initClass()){
-            mBaseFragment.add(baseFragment);
-        }
+//        mBaseFragment = new ArrayList<>();
+//        for(BaseFragment baseFragment : initClass()){
+//            mBaseFragment.add(baseFragment);
+//        }
+        mBaseFragment = Arrays.asList(initClass());
     }
 
     protected abstract BaseFragment[] initClass();
@@ -94,9 +97,10 @@ public abstract class BaseFragmentMainActivity extends FragmentActivity {
                     ft.hide(from);
                 }
                 //添加to
-                if (to != null) {
-                    ft.add(frameLayoutId, to).commit();
-                }
+//                if (to != null) {
+//                    ft.add(frameLayoutId, to).commit();
+//                }
+                ft.add(frameLayoutId, to).commit();
             } else {
                 //to已经被添加
                 // from隐藏
@@ -104,9 +108,10 @@ public abstract class BaseFragmentMainActivity extends FragmentActivity {
                     ft.hide(from);
                 }
                 //显示to
-                if (to != null) {
-                    ft.show(to).commit();
-                }
+//                if (to != null) {
+//                    ft.show(to).commit();
+//                }
+                ft.show(to).commit();
             }
         }
 
@@ -134,7 +139,7 @@ public abstract class BaseFragmentMainActivity extends FragmentActivity {
     /**
      * 根据位置得到对应的Fragment
      *
-     * @return
+     * @return    BaseFragment
      */
     protected BaseFragment getFragment() {
         return mBaseFragment.get(position);
