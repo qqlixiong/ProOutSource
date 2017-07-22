@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import java.lang.ref.WeakReference;
 
 /**
- * 使用软引用有效的避免了Handler内存泄漏问题
+ * 使用弱引用有效的避免了Handler内存泄漏问题
  * Created by Administrator on 2017/7/22.
  */
 
