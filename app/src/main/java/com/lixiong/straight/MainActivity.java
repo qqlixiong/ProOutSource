@@ -28,7 +28,9 @@ import com.lixiong.straight.my.fragment.MyFragment;
 import com.lixiong.straight.my.viewholder.MyHeadHolder;
 import com.lixiong.straight.project.fragment.ProjectFragment;
 import com.lixiong.straight.project.search.SearchHolder;
+import com.lixiong.straight.service.LocalService;
 import com.lixiong.straight.service.LocationService;
+import com.lixiong.straight.service.RemoteService;
 import com.lixiong.straight.view.TopBar;
 import com.zaaach.citypicker.CityPickerActivity;
 import com.zhy.http.okhttp.OkHttpUtils;
@@ -89,6 +91,8 @@ public class MainActivity extends BaseFragmentMainActivity {
         statusCode = sharedPreferenceUtil.get(Config.STATUS_CODE_KEY, "");
         city = sharedPreferenceUtil.get(Config.CURRENT_CITY,"");
         LogUtil.e("主页面接收到的状态码为：" + statusCode);
+        startService(new Intent(this, LocalService.class));
+        startService(new Intent(this, RemoteService.class));
     }
 
     @Override
